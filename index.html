@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ Gỗ Nhật Minh - Chất lượng - Uy tín - Tinh tế</title>
+    <link rel="stylesheet" href="/src/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <a href="tel:+84123456789" class="top-bar-link">
+                    <span class="icon">📞</span>
+                    <span>0123 456 789</span>
+                </a>
+                <a href="mailto:contact@dogonhatminh.vn" class="top-bar-link">
+                    <span class="icon">✉️</span>
+                    <span>contact@dogonhatminh.vn</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🪵</div>
+                    <div class="logo-text">
+                        <h1>Đồ Gỗ Nhật Minh</h1>
+                        <p>Chất lượng - Uy tín - Tinh tế</p>
+                    </div>
+                </div>
+
+                <nav class="nav" id="nav">
+                    <a href="#home" class="nav-link active" data-page="home">Trang chủ</a>
+                    <a href="#products" class="nav-link" data-page="products">Sản phẩm</a>
+                    <a href="#gallery" class="nav-link" data-page="gallery">Thư viện</a>
+                    <a href="#about" class="nav-link" data-page="about">Giới thiệu</a>
+                    <a href="#contact" class="nav-link" data-page="contact">Liên hệ</a>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <!-- Hero Slider -->
+            <div class="hero-slider">
+                <div class="slider-container">
+                    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1732575966442-b2d665c080d2?w=1920&q=80');">
+                        <div class="slide-overlay"></div>
+                        <div class="container">
+                            <div class="slide-content">
+                                <h2>Nghệ thuật chế tác gỗ tinh xảo</h2>
+                                <p>Mang đến không gian sống đẳng cấp với nội thất gỗ cao cấp</p>
+                                <button class="btn btn-primary" onclick="navigateTo('products')">Khám phá sản phẩm →</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1617638924751-cc232f82ecf9?w=1920&q=80');">
+                        <div class="slide-overlay"></div>
+                        <div class="container">
+                            <div class="slide-content">
+                                <h2>Thiết kế hiện đại, sang trọng</h2>
+                                <p>Kết hợp hoàn hảo giữa truyền thống và đương đại</p>
+                                <button class="btn btn-primary" onclick="navigateTo('products')">Khám phá sản phẩm →</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1685022515813-c42e8348639b?w=1920&q=80');">
+                        <div class="slide-overlay"></div>
+                        <div class="container">
+                            <div class="slide-content">
+                                <h2>Tay nghề thợ lành nghề</h2>
+                                <p>Hơn 20 năm kinh nghiệm trong nghề chế tác đồ gỗ</p>
+                                <button class="btn btn-primary" onclick="navigateTo('products')">Khám phá sản phẩm →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn prev" onclick="changeSlide(-1)">‹</button>
+                <button class="slider-btn next" onclick="changeSlide(1)">›</button>
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+
+            <!-- Features -->
+            <div class="section features-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Tại sao chọn chúng tôi?</h2>
+                        <p>Đồ Gỗ Nhật Minh cam kết mang đến những sản phẩm chất lượng cao nhất với dịch vụ tốt nhất</p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🌳</div>
+                            <h3>Chất lượng cao cấp</h3>
+                            <p>Sử dụng 100% gỗ tự nhiên từ các nguồn uy tín, được xử lý chống mối mọt, cong vênh.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">✨</div>
+                            <h3>Thiết kế độc đáo</h3>
+                            <p>Mỗi sản phẩm là một tác phẩm nghệ thuật, được thiết kế riêng theo yêu cầu khách hàng.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🛡️</div>
+                            <h3>Bảo hành dài hạn</h3>
+                            <p>Cam kết bảo hành 5 năm, hỗ trợ bảo dưỡng định kỳ miễn phí.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🚚</div>
+                            <h3>Giao hàng toàn quốc</h3>
+                            <p>Đóng gói cẩn thận, vận chuyển an toàn đến tận nơi trên toàn quốc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Products -->
+            <div class="section featured-products">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Sản phẩm nổi bật</h2>
+                        <p>Khám phá bộ sưu tập nội thất gỗ cao cấp được yêu thích nhất</p>
+                    </div>
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1617638924751-cc232f82ecf9?w=600&q=80');"></div>
+                            <div class="product-info">
+                                <span class="product-category">Phòng ăn</span>
+                                <h3>Bàn ăn gỗ óc chó</h3>
+                                <p class="product-price">25.000.000đ</p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1680772856779-43eef7cabf18?w=600&q=80');"></div>
+                            <div class="product-info">
+                                <span class="product-category">Phòng khách</span>
+                                <h3>Ghế sofa gỗ tự nhiên</h3>
+                                <p class="product-price">18.000.000đ</p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1678555815116-52c1b10517f5?w=600&q=80');"></div>
+                            <div class="product-info">
+                                <span class="product-category">Phòng ngủ</span>
+                                <h3>Tủ quần áo gỗ sồi</h3>
+                                <p class="product-price">32.000.000đ</p>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1583221742001-9ad88bf233ff?w=600&q=80');"></div>
+                            <div class="product-info">
+                                <span class="product-category">Phòng ngủ</span>
+                                <h3>Giường ngủ gỗ cao cấp</h3>
+                                <p class="product-price">28.000.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary" onclick="navigateTo('products')">Xem tất cả sản phẩm →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Commitment -->
+            <div class="section commitment-section">
+                <div class="container">
+                    <div class="commitment-grid">
+                        <div class="commitment-content">
+                            <h2>Cam kết của chúng tôi</h2>
+                            <ul class="commitment-list">
+                                <li><span class="check-icon">✓</span> Gỗ tự nhiên 100%, không pha tạp chất</li>
+                                <li><span class="check-icon">✓</span> Thiết kế theo yêu cầu, đo đạc tận nơi</li>
+                                <li><span class="check-icon">✓</span> Thi công chuyên nghiệp, đúng tiến độ</li>
+                                <li><span class="check-icon">✓</span> Bảo hành 5 năm, bảo trì trọn đời</li>
+                                <li><span class="check-icon">✓</span> Hỗ trợ tư vấn miễn phí 24/7</li>
+                                <li><span class="check-icon">✓</span> Giá cả cạnh tranh, thanh toán linh hoạt</li>
+                            </ul>
+                        </div>
+                        <div class="commitment-image">
+                            <img src="https://images.unsplash.com/photo-1685022515813-c42e8348639b?w=800&q=80" alt="Craftsman">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="section cta-section">
+                <div class="container">
+                    <h2>Bạn cần tư vấn?</h2>
+                    <p>Đội ngũ chuyên gia của chúng tôi sẵn sàng hỗ trợ bạn 24/7. Hãy liên hệ ngay để được tư vấn miễn phí!</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary" onclick="navigateTo('contact')">Liên hệ ngay</button>
+                        <button class="btn btn-secondary" onclick="navigateTo('gallery')">Xem thư viện ảnh</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Page -->
+        <section id="products" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Sản phẩm của chúng tôi</h1>
+                    <p>Khám phá bộ sưu tập nội thất gỗ cao cấp được chế tác tỉ mỉ</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="container">
+                    <div class="filter-section">
+                        <h3>Danh mục:</h3>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" onclick="filterProducts('all')">Tất cả sản phẩm</button>
+                            <button class="filter-btn" onclick="filterProducts('living')">Phòng khách</button>
+                            <button class="filter-btn" onclick="filterProducts('dining')">Phòng ăn</button>
+                            <button class="filter-btn" onclick="filterProducts('bedroom')">Phòng ngủ</button>
+                            <button class="filter-btn" onclick="filterProducts('office')">Văn phòng</button>
+                        </div>
+                    </div>
+
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Products will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Page -->
+        <section id="gallery" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Thư viện ảnh</h1>
+                    <p>Khám phá những dự án và sản phẩm đã hoàn thành của chúng tôi</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="container">
+                    <div class="gallery-grid" id="galleryGrid">
+                        <!-- Gallery items will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Về chúng tôi</h1>
+                    <p>Hơn 20 năm đồng hành cùng hàng nghìn gia đình Việt</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="container">
+                    <div class="about-grid">
+                        <div class="about-content">
+                            <h2>Câu chuyện của chúng tôi</h2>
+                            <p><strong>Đồ Gỗ Nhật Minh</strong> được thành lập từ năm 2004 bởi nghệ nhân Nguyễn Nhật Minh - một người thợ mộc tài ba với tình yêu và đam mê với nghề chế tác đồ gỗ.</p>
+                            <p>Xuất phát từ một xưởng mộc nhỏ, qua hơn 20 năm phát triển, chúng tôi đã trở thành một trong những đơn vị cung cấp nội thất gỗ cao cấp uy tín hàng đầu tại Việt Nam.</p>
+                            <p>Với phương châm <strong>"Chất lượng - Uy tín - Tinh tế"</strong>, chúng tôi luôn nỗ lực không ngừng để mang đến cho khách hàng những sản phẩm nội thất gỗ chất lượng cao nhất.</p>
+                        </div>
+                        <div class="about-image">
+                            <img src="https://images.unsplash.com/photo-1685022515813-c42e8348639b?w=800&q=80" alt="Workshop">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section stats-section">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">🏆</div>
+                            <div class="stat-value">20+</div>
+                            <div class="stat-label">Năm kinh nghiệm</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">👥</div>
+                            <div class="stat-value">5000+</div>
+                            <div class="stat-label">Khách hàng hài lòng</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">❤️</div>
+                            <div class="stat-value">100%</div>
+                            <div class="stat-label">Gỗ tự nhiên</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">📈</div>
+                            <div class="stat-value">95%</div>
+                            <div class="stat-label">Khách quay lại</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Giá trị cốt lõi</h2>
+                        <p>Những giá trị mà chúng tôi luôn hướng đến trong mọi sản phẩm và dịch vụ</p>
+                    </div>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-icon">🌟</div>
+                            <h3>Chất lượng</h3>
+                            <p>Cam kết sử dụng 100% gỗ tự nhiên cao cấp, được chọn lọc kỹ lưỡng từ các nguồn uy tín.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">🛠️</div>
+                            <h3>Tay nghề</h3>
+                            <p>Đội ngũ thợ mộc lành nghề với hơn 20 năm kinh nghiệm trong nghề chế tác đồ gỗ.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">🤝</div>
+                            <h3>Uy tín</h3>
+                            <p>Luôn đặt chữ tín lên hàng đầu, cam kết giao hàng đúng tiến độ và chất lượng.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">💡</div>
+                            <h3>Sáng tạo</h3>
+                            <p>Không ngừng sáng tạo, đổi mới để mang đến những sản phẩm độc đáo và tinh tế.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <div class="page-header">
+                <div class="container">
+                    <h1>Liên hệ với chúng tôi</h1>
+                    <p>Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="container">
+                    <div class="contact-info-grid">
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">📍</div>
+                            <h3>Địa chỉ</h3>
+                            <p>123 Đường Láng, Đống Đa, Hà Nội</p>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">📞</div>
+                            <h3>Điện thoại</h3>
+                            <p><a href="tel:+84123456789">0123 456 789</a></p>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">✉️</div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:contact@dogonhatminh.vn">contact@dogonhatminh.vn</a></p>
+                        </div>
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">🕒</div>
+                            <h3>Giờ làm việc</h3>
+                            <p>Thứ 2 - Thứ 7: 8:00 - 18:00<br>Chủ nhật: 9:00 - 17:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-grid">
+                        <div class="contact-form-section">
+                            <h2>Gửi tin nhắn cho chúng tôi</h2>
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Họ và tên <span class="required">*</span></label>
+                                    <input type="text" id="name" name="name" required placeholder="Nhập họ và tên của bạn">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="phone">Số điện thoại <span class="required">*</span></label>
+                                        <input type="tel" id="phone" name="phone" required placeholder="0123 456 789">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" placeholder="email@example.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Tiêu đề <span class="required">*</span></label>
+                                    <input type="text" id="subject" name="subject" required placeholder="Tôi muốn tư vấn về...">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Nội dung <span class="required">*</span></label>
+                                    <textarea id="message" name="message" rows="6" required placeholder="Nhập nội dung bạn muốn trao đổi..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">📨 Gửi tin nhắn</button>
+                            </form>
+                        </div>
+                        <div class="map-section">
+                            <h2>Bản đồ</h2>
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8639810788253!2d105.79420831493333!3d21.037853985993673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4cd0c66f05%3A0xea51c0cddc2e5a!2zMTIzIMSQLiBMw6FuZywgxJDhu5NuZyDEkGEsIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1234567890123!5m2!1svi!2s"
+                                    width="100%"
+                                    height="100%"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Đồ Gỗ Nhật Minh</h3>
+                    <p>Chuyên cung cấp các sản phẩm nội thất gỗ cao cấp, được chế tác tỉ mỉ từ những nghệ nhân lành nghề với hơn 20 năm kinh nghiệm.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Liên kết nhanh</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home" onclick="navigateTo('home')">Trang chủ</a></li>
+                        <li><a href="#products" onclick="navigateTo('products')">Sản phẩm</a></li>
+                        <li><a href="#gallery" onclick="navigateTo('gallery')">Thư viện ảnh</a></li>
+                        <li><a href="#about" onclick="navigateTo('about')">Giới thiệu</a></li>
+                        <li><a href="#contact" onclick="navigateTo('contact')">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Thông tin liên hệ</h3>
+                    <ul class="footer-contact">
+                        <li>📍 123 Đường Láng, Đống Đa, Hà Nội</li>
+                        <li>📞 <a href="tel:+84123456789">0123 456 789</a></li>
+                        <li>✉️ <a href="mailto:contact@dogonhatminh.vn">contact@dogonhatminh.vn</a></li>
+                        <li>🕒 Thứ 2 - Thứ 7: 8:00 - 18:00<br>&nbsp;&nbsp;&nbsp;&nbsp;Chủ nhật: 9:00 - 17:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Đồ Gỗ Nhật Minh. Bản quyền thuộc về Công ty TNHH Đồ Gỗ Nhật Minh.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+        <button class="lightbox-btn prev" onclick="lightboxNavigate(-1)">‹</button>
+        <button class="lightbox-btn next" onclick="lightboxNavigate(1)">›</button>
+    </div>
+
+    <script src="/src/script.js"></script>
+</body>
+</html>
